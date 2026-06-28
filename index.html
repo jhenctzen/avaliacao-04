@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Haru Café - Cafeteria Japonesa</title>
+        <link rel="icon" href="https://img.icons8.com/emoji/48/cherry-blossom.png" type="image/png">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <input type="checkbox" id="cart-toggle" class="cart-toggle-input">
+        <header class="hero-section">
+            <div class="hero-overlay">
+                <div class="logo-container">
+                    <div class="logo-placeholder">🌸</div>
+                </div>
+                <h1>Haru Café</h1>
+                <p class="address">📍 Av. das Flores Japonesas, Nº 105 - Liberdade, São Paulo - SP</p>
+                <span class="status-badge">Terça a Domingo, das 10h às 20h</span>
+            </div>
+        </header>
+        <main class="menu-container">
+            <h2>Conheça nosso cardápio</h2>
+            <section class="menu-section">
+                <h3>Bebidas e Cafés Especiais</h3>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-img"
+                            style="background-image: url('https://www.justonecookbook.com/wp-content/uploads/2025/12/Matcha-Latte-4598-I-2.jpg');">
+                        </div>
+                        <div class="product-info">
+                            <h4>Matcha Latte</h4>
+                            <p>Chá verde integral japonês moído na pedra, misturado com leite vaporizado cremoso.</p>
+                            <div class="product-footer">
+                                <span class="price">R$ 18,00</span>
+                                <button type="button" class="add-to-cart-btn">Adicionar 🛒</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"
+                            style="background-image: url('https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?q=80&w=300&auto=format&fit=crop');">
+                        </div>
+                        <div class="product-info">
+                            <h4>Hojicha Cold Brew</h4>
+                            <p>Chá verde torrado japonês extraído a frio, apresentando notas amendoadas e defumadas.</p>
+                            <div class="product-footer">
+                                <span class="price">R$ 16,00</span>
+                                <button type="button" class="add-to-cart-btn">Adicionar 🛒</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="menu-section">
+                <h3>Doces e Sobremesas</h3>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-img"
+                            style="background-image: url('https://www.rainbownourishments.com/wp-content/uploads/2023/06/vegan-strawberry-mochi-ice-cream-1.jpg');">
+                        </div>
+                        <div class="product-info">
+                            <h4>Strawberry Mochi</h4>
+                            <p>Massa de arroz super macia recheada com morango fresco inteiro e doce de feijão azuki.
+                            </p>
+                            <div class="product-footer">
+                                <span class="price">R$ 12,00</span>
+                                <button type="button" class="add-to-cart-btn">Adicionar 🛒</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product-card">
+                        <div class="product-img"
+                            style="background-image: url('https://images.unsplash.com/photo-1606313564200-e75d5e30476c?q=80&w=300&auto=format&fit=crop');">
+                        </div>
+                        <div class="product-info">
+                            <h4>Dorayaki Clássico</h4>
+                            <p>Panquecas estilo japonês recheadas com uma camada generosa de pasta de azuki doce.</p>
+                            <div class="product-footer">
+                                <span class="price">R$ 14,00</span>
+                                <button type="button" class="add-to-cart-btn">Adicionar 🛒</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <div class="cart-bar">
+            <label for="cart-toggle" class="cart-bar-btn">🛒 Ver Carrinho (2)</label>
+        </div>
+        <div class="modal-overlay">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h3>Seu carrinho</h3>
+                    <label for="cart-toggle" class="close-btn">&times;</label>
+                </div>
+                <div class="modal-body">
+                    <div class="cart-item">
+                        <div class="item-details">
+                            <p class="item-title">Matcha Latte</p>
+                            <p class="item-qty">(Quantidade: 2)</p>
+                        </div>
+                        <button type="button" class="remove-btn">✕ Remover</button>
+                    </div>
+                    <div class="cart-item">
+                        <div class="item-details">
+                            <p class="item-title">Strawberry Mochi</p>
+                            <p class="item-qty">(Quantidade: 1)</p>
+                        </div>
+                        <button type="button" class="remove-btn">✕ Remover</button>
+                    </div>
+                    <div class="address-container">
+                        <label for="address-input">Endereço de entrega:</label>
+                        <input type="text" id="address-input" placeholder="Informe o seu endereço completo...">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <label for="cart-toggle" class="btn-secondary">Fechar</label>
+                    <button type="button" class="btn-primary">Finalizar pedido</button>
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <p>© 2026 Haru Café - Todos os direitos reservados.</p>
+            <p>Desenvolvido para fins educacionais.</p>
+        </footer>
+    </body>
+</html>
